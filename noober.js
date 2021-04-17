@@ -12,18 +12,19 @@ document.addEventListener('DOMContentLoaded', async function() {
 
   // 🔥 YOUR CODE GOES HERE 🔥
   // Write the recipe (algorithm) in the comments. Then, write the code.
-  
-  // 🔥 YOUR CODE ENDS HERE 🔥
-  // Passenger detials, pickup location, and dropoff location
+
+  // Passenger detials
   let passengerFirstName = ride.passengerDetails.first
   let passengerLastName = ride.passengerDetails.last
   let passengerPhoneNumber = ride.passengerDetails.phoneNumber
-
+  
+  // Pickup location 
   let pickupAddress = ride.pickupLocation.address
   let pickupCity = ride.pickupLocation.city 
   let pickupState = ride.pickupLocation.state 
   let pickupZip = ride.pickupLocation.zip 
-
+  
+  // Dropoff location
   let dropoffAddress = ride.dropoffLocation.address
   let dropoffCity = ride.dropoffLocation.city 
   let dropoffState = ride.dropoffLocation.state 
@@ -44,6 +45,5 @@ document.addEventListener('DOMContentLoaded', async function() {
 
   // A human-readable format
   console.log(`${levelOfService}: ${passengerFirstName} ${passengerLastName} - ${passengerPhoneNumber}. Pickup at ${pickupAddress}, ${pickupCity}, ${pickupState} ${pickupZip}. Drop-off at ${dropoffAddress}, ${dropoffCity}, ${dropoffState} ${dropoffZip}.`)
-
-
 })
+  // 🔥 YOUR CODE ENDS HERE 🔥
